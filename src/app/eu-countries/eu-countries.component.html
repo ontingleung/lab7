@@ -1,0 +1,16 @@
+<div class="container">
+    <section *ngFor="let country of euCountries" class="listing">
+      <img
+        class="listing-photo"
+        [src]="country.flag"
+        alt="Flag of {{ country.name }}"
+        crossorigin
+      />
+      <h2 class="listing-heading">{{ country.name }}</h2>
+      <p class="listing-location">Capital: {{ country.capital }}</p>
+      <p class="listing-population">Population: {{ country.population | number }}</p>
+      <p class="listing-currency">Currency: {{ country.currency }}</p>
+      <a [routerLink]="['/details', country.code]">Learn More</a>
+    </section>
+  </div>
+  

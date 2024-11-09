@@ -1,0 +1,28 @@
+.results {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+input[type="text"] {
+    border: solid 1px blue;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+}
+
+button {
+    padding: 10px;
+    border: solid 1px purple;
+    background: purple;
+    color: rgb(169, 11, 11);
+    border-radius: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    input[type="text"] {
+        width: 70%;
+    }
+}

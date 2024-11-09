@@ -1,0 +1,9 @@
+<section>
+    <form>
+        <input type="text" placeholder="Filter by country" #filter>
+        <button class="primary" type="button">Search</button>
+    </form>
+</section>
+<section class="results">
+    <app-eu-countries [euCountries]="euCountries"></app-eu-countries>
+</section>
